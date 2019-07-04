@@ -1,1 +1,0 @@
-from .mila_slider import MilaSlider

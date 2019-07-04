@@ -145,5 +145,58 @@
       link="section_1" />
     <axis
       xyz="-1 0 0" />
+  </joint> 
+   <link
+    name="section_2">
+    <inertial>
+      <origin
+        xyz="-0.000168296047337745 0.013441283142678 -3.36410230095056E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0201321844066136" />
+      <inertia
+        ixx="6.51960684491032E-06"
+        ixy="-5.35361387413197E-07"
+        ixz="-5.67167110473808E-13"
+        iyy="2.37206686086462E-06"
+        iyz="-1.07202400036876E-12"
+        izz="7.46616268702629E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr/meshes/section_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PoppyErgoJr/meshes/section_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="m3"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0240006783879033"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="section_1" />
+    <child
+      link="section_2" />
+    <axis
+      xyz="-1 0 0" />
   </joint>
 </robot>

@@ -13,7 +13,8 @@
   "motorgroups": {
     "base": [
       "m1",
-      "m2"
+      "m2",
+      "m3"
     ]
   },
   "motors": {
@@ -22,8 +23,8 @@
       "type": "XL-320",
       "id": 1,
       "angle_limit": [
-        -45.0,
-        45.0
+        -90.0,
+        90.0
       ],
       "orientation": "direct"
     },
@@ -32,18 +33,23 @@
       "type": "XL-320",
       "id": 2,
       "angle_limit": [
-        45.0,
-        135.0
+        -90.0,
+        90.0
+      ],
+      "orientation": "direct"
+    },
+    "m3": {
+      "offset": 0.0,
+      "type": "XL-320",
+      "id": 2,
+      "angle_limit": [
+        -90.0,
+        90.0
       ],
       "orientation": "direct"
     }
   },
   "sensors": {
-     "camera": {
-      "type": "OpenCVCamera",
-      "index": -1,
-      "fps": 100.0,
-      "resolution": [640, 480]
-    }
+     
   }
 }

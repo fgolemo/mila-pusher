@@ -5,7 +5,7 @@ from pypot.creatures import AbstractPoppyCreature
 from pypot.creatures.ik import IKChain
 
 
-class MilaSlider(AbstractPoppyCreature):
+class MilaPusher(AbstractPoppyCreature):
     @classmethod
     def setup(cls, robot):
         robot._primitive_manager._filter = partial(sum, axis=0)

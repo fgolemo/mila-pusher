@@ -1,5 +1,5 @@
-# Mila Slider
+# Mila Pusher
 
-This is a fork from Poppy Ergo Jr but modified for a 2-DoF sliding configuration.
+This is a fork from Poppy Ergo Jr but modified for a 3-DoF sliding configuration.
 
 More documentation to follow.
